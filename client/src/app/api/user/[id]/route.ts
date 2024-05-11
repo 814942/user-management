@@ -1,6 +1,7 @@
-import { DataResponse } from "@/interfaces/data.interfaces"
 import axios from "axios"
 import { NextRequest, NextResponse } from "next/server"
+
+import { UsersDataResponse } from "@/interfaces/data.interfaces"
 
 const $URL = 'https://jsonplaceholder.typicode.com'
 
@@ -9,7 +10,7 @@ interface Params {
 }
 
 export async function GET(req: NextRequest, { params }: Params) {
-  const { data } = await axios.get<DataResponse>(`${$URL}/users/${params.id}`)
+  const { data } = await axios.get<UsersDataResponse>(`${$URL}/users/${params.id}`)
 
   return NextResponse.json({ data })
 }

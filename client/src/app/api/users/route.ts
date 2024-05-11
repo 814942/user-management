@@ -1,14 +1,14 @@
 import axios from "axios"
 import { NextRequest, NextResponse } from "next/server"
 
-import { DataResponse } from "@/interfaces/data.interfaces"
+import { UsersDataResponse } from "@/interfaces/data.interfaces"
 
 const $URL = 'https://jsonplaceholder.typicode.com'
 
 export async function GET() {
-  const { data } = await axios.get<DataResponse[]>(`${$URL}/users`)
+  const { data } = await axios.get<UsersDataResponse[]>(`${$URL}/users`)
 
-  const mappedData = data.map((user: DataResponse) => ({
+  const mappedData = data.map((user: UsersDataResponse) => ({
     id: user.id,
     name: user.name,
     email: user.email,
