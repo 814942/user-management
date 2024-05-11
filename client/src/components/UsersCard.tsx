@@ -1,8 +1,6 @@
 import Link from "next/link";
-import { redirect } from 'next/navigation'
 
 import { User } from "@/interfaces/users.interface";
-import { navigate } from "@/services/navigate";
 
 const UsersCard = ({ id, name, email, street, companyName }: User) => (
   <div className="w-[900px] py-8 px-8 max-w-sm mx-auto rounded-xl shadow-lg space-y-2 hover:scale-110 hover:border-blue transition border border-pink">
