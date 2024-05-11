@@ -9,9 +9,13 @@ La idea general es crear una aplicación en la cual se puedan ver una lista de u
 
 ## Comenzando
 
+* Para correrlo de forma local:
  1. Forkear el repositorio para tener una copia del mismo en sus cuentas.
  2. Clonar el repositorio en sus computadoras para comenzar a trabajar.
  3. Utilizar el comando `npm run dev` para levantar el proyecto.
+
+* Puedes verlo online aqui:
+  [user management](https://user-management-orpin.vercel.app/)
 
  __IMPORTANTE:__ Es necesario contar minimamente con la última versión estable de Node y NPM. Asegurarse de contar con ella para poder instalar correctamente las dependecias necesarias para correr el proyecto.
 
