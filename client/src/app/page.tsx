@@ -1,6 +1,6 @@
 "use client"
 import UsersCard from "@/components/UsersCard";
-import Loading from "@/components/loading";
+import Loading from "@/components/Loading";
 
 import useApi from "@/hooks/useApi";
 

@@ -1,7 +1,7 @@
 "use client"
 import BackToHome from "@/components/BackHome";
 import PostsCard from "@/components/PostsCard";
-import Loading from "@/components/loading";
+import Loading from "@/components/Loading";
 
 import useApi from "@/hooks/useApi";
 
